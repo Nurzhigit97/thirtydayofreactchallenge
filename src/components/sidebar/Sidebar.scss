@@ -1,0 +1,14 @@
+.sidebar {
+  & a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  color: white;
+  & ul li {
+    list-style-type: none;
+    cursor: pointer;
+    &:hover {
+      color: green;
+    }
+  }
+}
