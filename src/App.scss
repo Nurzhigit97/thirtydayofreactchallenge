@@ -9,11 +9,13 @@ header {
 }
 article {
   grid-area: content;
+  min-height: 725px;
   color: white;
   background-color: black;
 }
 aside {
   grid-area: sidebar;
+  min-height: 725px;
   background-color: #45aaf2;
 }
 footer {
@@ -22,20 +24,38 @@ footer {
 }
 .App {
   display: grid;
-  grid-gap: 10px;
+  gap: 5px;
   grid-template-columns: 1fr 4fr;
   grid-template-areas:
     "header  header"
     "sidebar content"
     "footer  footer";
+  & .arrowUp {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    font-size: 30px;
+    color: rgb(220, 243, 18);
+  }
+  & .arrowUp:hover {
+    cursor: pointer;
+    color: rgb(165, 172, 103);
+  }
 }
+
 @media (max-width: 500px) {
   .App {
     grid-template-columns: 4fr;
     grid-template-areas:
       "header"
-      "content"
       "sidebar"
+      "content"
       "footer";
+  }
+  article {
+    min-height: auto;
+  }
+  aside {
+    min-height: auto;
   }
 }

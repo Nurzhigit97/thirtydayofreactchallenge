@@ -1,0 +1,32 @@
+.about {
+  & ul {
+    list-style: none;
+    position: relative;
+  }
+  & > .instruction > .reactIcon > li:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("https://www.30daysofreact.com/static/media/react_logo.a6cd748e.png");
+    background-size: cover;
+  }
+  & > .installation > .iconDollar > li:before {
+    position: absolute;
+    left: 10px;
+    content: "$";
+    font-weight: 600;
+  }
+  & .title::before {
+    content: "# ";
+  }
+
+  & a {
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+  }
+  & a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+}

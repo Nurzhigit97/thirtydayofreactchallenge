@@ -1,12 +1,16 @@
 .navbar {
   display: flex;
   justify-content: center;
-}
 
-.navbar ul {
-  display: flex;
-  justify-content: center;
-  gap: 115px;
-  align-items: center;
-  list-style-type: none;
+  & ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 115px;
+    align-items: center;
+    list-style-type: none;
+  }
+  & a:hover {
+    color: #ffffff;
+  }
 }

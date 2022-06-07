@@ -1,0 +1,36 @@
+.footer {
+  min-height: 100px;
+  background: linear-gradient(90deg, #4776e6, #8e54e9);
+  position: relative;
+  & .socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  & .socialMedia i {
+    font-size: 30px;
+  }
+  & .socialMedia i {
+    font-size: 30px;
+  }
+
+  & .socialMedia .fa-github {
+    color: rgb(0, 0, 0);
+    &:hover {
+      color: rgb(44, 43, 43);
+    }
+  }
+  & .socialMedia .fa-twitter {
+    color: rgb(59, 153, 170);
+    &:hover {
+      color: rgb(111, 151, 158);
+    }
+  }
+  & .socialMedia .fa-linkedin-in {
+    color: rgb(19, 34, 163);
+    &:hover {
+      color: rgb(51, 65, 190);
+    }
+  }
+
+}
