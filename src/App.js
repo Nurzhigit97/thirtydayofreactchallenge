@@ -9,6 +9,8 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import About from "./layouts/about/About";
 import DummyData from "./layouts/dummyData/DummyData";
+import FrontEndTehnologies from "./components/sidebarComponents/frontEndTehnologies/FrontEndTehnologies";
+import GenerateNumber from "./components/sidebarComponents/generateNumber/GenerateNumber";
 
 function scrollTop() {
   // if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -35,9 +37,13 @@ function App() {
       {/* Content */}
       <article>
         <Routes>
+          {/* nav links */}
           <Route path="/" element={<Menu />} />
           <Route path="/about" element={<About />} />
           <Route path="/dummy" element={<DummyData />} />
+          {/* sidebar links */}
+          <Route path="frontendTehnologies" element={<FrontEndTehnologies />} />
+          <Route path="generateNumber" element={<GenerateNumber />} />
         </Routes>
       </article>
       {/* footer */}
@@ -45,7 +51,7 @@ function App() {
         <Footer />
       </footer>
       <div className="arrowUp" onClick={scrollTop}>
-        <i class="fa-solid fa-circle-up"></i>
+        <i className="fa-solid fa-circle-up"></i>
       </div>
     </div>
   );
