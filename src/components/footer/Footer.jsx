@@ -7,17 +7,17 @@ const Footer = () => {
       <div className="socialMedia">
         <div className="git">
           <a href="https://github.com/Asabeneh">
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
         </div>
         <div className="twitter">
           <a href="https://twitter.com/">
-            <i class="fa-brands fa-twitter"></i>
+            <i className="fa-brands fa-twitter"></i>
           </a>
         </div>
         <div className="Linkedin">
           <a href="https://www.linkedin.com/feed/">
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
       </div>

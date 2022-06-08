@@ -1,0 +1,12 @@
+.frontEndTehnologies__list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  & .frontEndTehnologies__item img {
+    width: 100px;
+  }
+  & .frontEndTehnologies__item img:hover {
+    width: 105px;
+    cursor: pointer;
+  }
+}

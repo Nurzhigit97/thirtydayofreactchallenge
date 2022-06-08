@@ -7,12 +7,12 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/" activeClassName="active">
+            <Link to="/frontendTehnologies" activeClassName="active">
               Front-end Tehnologies
             </Link>
           </li>
           <li>
-            <Link to="/about" activeClassName="active">
+            <Link to="/GenerateNumber" activeClassName="active">
               Generate Number
             </Link>
           </li>
