@@ -34,11 +34,24 @@ function Quiz() {
   };
   //Set Name
 
+  const NameFirstIndexUpper = () => {
+    return (
+      <div>
+        <h2>{`${name[0].toUpperCase()}${name.slice(1)}`}:</h2>
+      </div>
+    );
+  };
+
   return (
     <div className="quiz">
       {showScore ? (
         <div className="score-section">
-          <h1>{name}:</h1> You scored {score} out of {questions.length}
+          <div>{<NameFirstIndexUpper />}</div>
+          <div>
+            <h2>
+              You scored {score} out of {questions.length}
+            </h2>
+          </div>
         </div>
       ) : (
         <>
@@ -47,7 +60,7 @@ function Quiz() {
               <form className="form">
                 <div class="field">
                   <div class="control">
-                    <h3>{`${name[0].toUpperCase()}${name.slice(1)}`}</h3>
+                    <div>{<NameFirstIndexUpper />}</div>
                     <input
                       type="text"
                       value={input}
