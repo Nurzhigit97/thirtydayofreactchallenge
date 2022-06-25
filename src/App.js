@@ -11,6 +11,10 @@ import About from "./layouts/about/About";
 import DummyData from "./layouts/dummyData/DummyData";
 import FrontEndTehnologies from "./components/sidebarComponents/frontEndTehnologies/FrontEndTehnologies";
 import GenerateNumber from "./components/sidebarComponents/generateNumber/GenerateNumber";
+import Population from "./components/sidebarComponents/population/Population";
+import Quiz from "./components/sidebarComponents/quiz/Quiz";
+import NextCountry from "./components/sidebarComponents/nextCountry/NextCountry.jsx";
+import Portfolio from "./components/sidebarComponents/portfolio/Portfolio";
 
 function scrollTop() {
   // if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -44,6 +48,10 @@ function App() {
           {/* sidebar links */}
           <Route path="frontendTehnologies" element={<FrontEndTehnologies />} />
           <Route path="generateNumber" element={<GenerateNumber />} />
+          <Route path="population" element={<Population />} />
+          <Route path="quiz" element={<Quiz />} />
+          <Route path="nextCountry" element={<NextCountry />} />
+          <Route path="portfolio" element={<Portfolio />} />
         </Routes>
       </article>
       {/* footer */}
