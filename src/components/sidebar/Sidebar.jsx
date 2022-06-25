@@ -17,12 +17,12 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/dummy" activeClassName="active">
+            <Link to="/portfolio" activeClassName="active">
               Portfolio(Class)
             </Link>
           </li>
           <li>
-            <Link to="/dummy" activeClassName="active">
+            <Link to="/nextCountry" activeClassName="active">
               Next Country
             </Link>
           </li>
@@ -32,7 +32,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/dummy" activeClassName="active">
+            <Link to="/population" activeClassName="active">
               World countries
             </Link>
           </li>
@@ -47,7 +47,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/dummy" activeClassName="active">
+            <Link to="/quiz" activeClassName="active">
               Test quiz(Class)
             </Link>
           </li>
