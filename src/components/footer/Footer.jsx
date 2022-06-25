@@ -1,5 +1,11 @@
 import "./Footer.scss";
-
+const CopyRight = (props) => {
+  return (
+    <div className="text-center">
+        <u>Copyright {props.date.getFullYear()}</u>
+    </div>
+  );
+};
 const Footer = () => {
   return (
     <div className="footer">
@@ -21,6 +27,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <CopyRight date={new Date()} />
     </div>
   );
 };
