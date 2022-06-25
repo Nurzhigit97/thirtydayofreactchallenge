@@ -1,0 +1,25 @@
+.dataShowInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  & .clipboard {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+  }
+  & .clipboard:hover:after {
+    padding-left: 10px;
+    content: "copy";
+    position: absolute;
+  }
+  & .clipboard:active {
+    color: rgb(67, 145, 145);
+  }
+}
+
+.inputData {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
