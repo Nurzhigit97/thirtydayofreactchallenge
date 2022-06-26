@@ -23,26 +23,21 @@ const Sidebar = () => {
           </li>
           <li>
             <Link to="/countriesApi" activeClassName="active">
-            Countries Api
+              Countries Api
             </Link>
           </li>
           <li>
-            <Link to="/dummy" activeClassName="active">
+            <Link to="/frontendTehnologies" activeClassName="active">
               Event Handle(Change position on Mouse)
             </Link>
           </li>
           <li>
-            <Link to="/population" activeClassName="active">
-              World countries
-            </Link>
-          </li>
-          <li>
-            <Link to="/dummy" activeClassName="active">
+            <Link to="/frontendTehnologies" activeClassName="active">
               Generate Hexdecimal color
             </Link>
           </li>
           <li>
-            <Link to="/dummy" activeClassName="active">
+            <Link to="/frontendTehnologies" activeClassName="active">
               Twitter clone(Fucn,Hooks,Redux)
             </Link>
           </li>
@@ -52,7 +47,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/dummy" activeClassName="active">
+            <Link to="/frontendTehnologies" activeClassName="active">
               Login with db(Fucn,Hooks,Redux)
             </Link>
           </li>
