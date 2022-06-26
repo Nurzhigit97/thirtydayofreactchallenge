@@ -86,7 +86,7 @@ const DummyData = () => {
         <button>Generate</button>
 
         <div className="dataShowInfo">
-          <textarea name="" id="" cols="70" rows="15" value={names}></textarea>
+          <textarea name="" id="" value={names}></textarea>
           <div className="clipboard">
             <i class="fa-solid fa-paste col"></i>
           </div>
