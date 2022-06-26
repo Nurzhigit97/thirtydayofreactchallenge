@@ -1,8 +1,8 @@
-import "./NextCountry.scss";
+import "./CountriesApi.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Spinner } from "react-bootstrap";
-const NextCountry = () => {
+const CountriesApi = () => {
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchKey, setSearchKey] = useState("");
@@ -13,7 +13,7 @@ const NextCountry = () => {
       .then((response) => setCountries(response.data));
   }, [setCountries]);
 
-  const lyricsFunction = async () => {
+  const worldCountries = async () => {
     try {
       const data = await axios
         .get(`https://restcountries.com/v3.1/all`)
@@ -27,11 +27,11 @@ const NextCountry = () => {
     }
   };
   useEffect(() => {
-    lyricsFunction();
+    worldCountries();
   }, []);
   console.log(countries);
   return (
-    <div className="nextCountries">
+    <div className="countriesApi">
       <input
         value={searchKey}
         onChange={(e) => {
@@ -54,7 +54,7 @@ const NextCountry = () => {
         <option value="1000000000">population less then 1000000000</option>
       </select>
       {loading ? (
-        <div className="data">
+        <div className="countriesItem">
           {countries
             .filter(({ name }) => name.common.toLowerCase().includes(searchKey))
             .filter(({ population }) => population < filterType)
@@ -90,4 +90,4 @@ const NextCountry = () => {
   );
 };
 
-export default NextCountry;
+export default CountriesApi;

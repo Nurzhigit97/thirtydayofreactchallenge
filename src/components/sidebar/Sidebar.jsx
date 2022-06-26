@@ -22,8 +22,8 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/nextCountry" activeClassName="active">
-              Next Country
+            <Link to="/countriesApi" activeClassName="active">
+            Countries Api
             </Link>
           </li>
           <li>

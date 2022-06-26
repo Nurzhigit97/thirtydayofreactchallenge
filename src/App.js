@@ -13,7 +13,7 @@ import FrontEndTehnologies from "./components/sidebarComponents/frontEndTehnolog
 import GenerateNumber from "./components/sidebarComponents/generateNumber/GenerateNumber";
 import Population from "./components/sidebarComponents/population/Population";
 import Quiz from "./components/sidebarComponents/quiz/Quiz";
-import NextCountry from "./components/sidebarComponents/nextCountry/NextCountry.jsx";
+import CountriesApi from "./components/sidebarComponents/countriesApi/CountriesApi.jsx";
 import Portfolio from "./components/sidebarComponents/portfolio/Portfolio";
 
 function scrollTop() {
@@ -50,7 +50,7 @@ function App() {
           <Route path="generateNumber" element={<GenerateNumber />} />
           <Route path="population" element={<Population />} />
           <Route path="quiz" element={<Quiz />} />
-          <Route path="nextCountry" element={<NextCountry />} />
+          <Route path="countriesApi" element={<CountriesApi />} />
           <Route path="portfolio" element={<Portfolio />} />
         </Routes>
       </article>
