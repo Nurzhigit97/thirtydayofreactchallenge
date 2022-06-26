@@ -6,7 +6,7 @@ const NextCountry = () => {
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchKey, setSearchKey] = useState("");
-  const [filterType, setFilterType] = useState("10000000000");
+  const [filterType, setFilterType] = useState(10000000000);
   useEffect(() => {
     axios
       .get("https://restcountries.com/v3.1/all")
@@ -29,7 +29,6 @@ const NextCountry = () => {
   useEffect(() => {
     lyricsFunction();
   }, []);
-
   console.log(countries);
   return (
     <div className="nextCountries">
