@@ -41,7 +41,7 @@ const NextCountry = () => {
                   <img src={flags.png} alt="flags" />
                 </div>
                 <h4 className="text-center">{name.common}</h4>
-                <p>{capital}</p>
+                <p>Capital: {capital == null ? "not have" : capital}</p>
                 <p>Надо получить языки из Объекта</p>
                 <p>
                   Population:
