@@ -6,6 +6,7 @@ const NextCountry = () => {
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchKey, setSearchKey] = useState("");
+  const [filterType, setFilterType] = useState("");
   useEffect(() => {
     axios
       .get("https://restcountries.com/v3.1/all")
@@ -41,9 +42,22 @@ const NextCountry = () => {
         className="form-control"
         placeholder="Search items..."
       />
+      <select
+        className="form-control"
+        value={filterType}
+        onChange={(e) => {
+          setFilterType(e.target.value);
+        }}
+      >
+        <option value="">All</option>
+        <option value="1000">population less then 10000</option>
+        <option value="100000">population less then 100000</option>
+        <option value="1000000000">population less then 1000000000</option>
+      </select>
       {loading ? (
         <div className="data">
           {countries
+            .filter(({ population }) => population < filterType)
             .filter(({ name }) => name.common.toLowerCase().includes(searchKey))
             .map(
               ({ name, flags, capital, languages, population, currencies }) => (
