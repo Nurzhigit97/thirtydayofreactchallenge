@@ -49,9 +49,9 @@ const CountriesApi = () => {
         }}
       >
         <option value="10000000000">All</option>
-        <option value="1000">population less then 10000</option>
-        <option value="100000">population less then 100000</option>
-        <option value="1000000000">population less then 1000000000</option>
+        <option value="1000">Population less then 10000</option>
+        <option value="100000">Population less then 100000</option>
+        <option value="1000000000">Population less then 1000000000</option>
       </select>
       {loading ? (
         <div className="countriesItem">
