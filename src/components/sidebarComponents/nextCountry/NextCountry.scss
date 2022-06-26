@@ -1,15 +1,33 @@
-.generateNumber ul {
-  display: flex;
-  list-style-type: none;
-  flex-wrap: wrap;
-  gap: 50px;
-}
+.nextCountries {
+  & .generateNumber ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 
-.generateNumber ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: aqua;
+  & .generateNumber ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+  }
+
+  & .data {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  & .blockData {
+    border: 1px solid green;
+
+    & img {
+      padding: 5px 50px 0 50px;
+      width: 300px;
+      height: 150px;
+    }
+  }
 }
