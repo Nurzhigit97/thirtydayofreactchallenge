@@ -6,7 +6,7 @@ const NextCountry = () => {
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchKey, setSearchKey] = useState("");
-  const [filterType, setFilterType] = useState("");
+  const [filterType, setFilterType] = useState("10000000000");
   useEffect(() => {
     axios
       .get("https://restcountries.com/v3.1/all")
@@ -49,7 +49,7 @@ const NextCountry = () => {
           setFilterType(e.target.value);
         }}
       >
-        <option value="">All</option>
+        <option value="10000000000">All</option>
         <option value="1000">population less then 10000</option>
         <option value="100000">population less then 100000</option>
         <option value="1000000000">population less then 1000000000</option>
@@ -57,8 +57,8 @@ const NextCountry = () => {
       {loading ? (
         <div className="data">
           {countries
-            .filter(({ population }) => population < filterType)
             .filter(({ name }) => name.common.toLowerCase().includes(searchKey))
+            .filter(({ population }) => population < filterType)
             .map(
               ({ name, flags, capital, languages, population, currencies }) => (
                 <div className="blockData">
