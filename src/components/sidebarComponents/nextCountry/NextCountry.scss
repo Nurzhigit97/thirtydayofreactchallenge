@@ -1,20 +1,4 @@
 .nextCountries {
-  & .generateNumber ul {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-
-  & .generateNumber ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    background-color: aqua;
-  }
-
   & .data {
     display: flex;
     justify-content: space-evenly;
