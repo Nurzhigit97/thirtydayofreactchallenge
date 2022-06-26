@@ -13,6 +13,7 @@ function Quiz() {
 
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
+      // 
       setCurrentQuestion(nextQuestion);
     } else {
       setShowScore(true);

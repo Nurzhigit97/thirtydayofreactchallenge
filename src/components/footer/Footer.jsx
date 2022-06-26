@@ -1,7 +1,7 @@
 import "./Footer.scss";
 const CopyRight = (props) => {
   return (
-    <div className="text-center">
+    <div className="copyright text-center">
         <u>Copyright {props.date.getFullYear()}</u>
     </div>
   );
