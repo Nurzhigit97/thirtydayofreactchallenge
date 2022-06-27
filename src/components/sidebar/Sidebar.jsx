@@ -27,6 +27,11 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
+            <Link to="/quiz" activeClassName="active">
+              Test quiz(Class)
+            </Link>
+          </li>
+          <li>
             <Link to="/frontendTehnologies" activeClassName="active">
               Event Handle(Change position on Mouse)
             </Link>
@@ -39,11 +44,6 @@ const Sidebar = () => {
           <li>
             <Link to="/frontendTehnologies" activeClassName="active">
               Twitter clone(Fucn,Hooks,Redux)
-            </Link>
-          </li>
-          <li>
-            <Link to="/quiz" activeClassName="active">
-              Test quiz(Class)
             </Link>
           </li>
           <li>
