@@ -1,9 +1,9 @@
 import "./GenerateNumber.scss";
 
-const GenerateNum = () => {
+const GenerateNum = ({ first, end }) => {
   let numbers = [];
 
-  for (let i = 0; i < 40; i++) {
+  for (let i = first; i <= end; i++) {
     numbers.push(i);
   }
   return (
@@ -23,7 +23,7 @@ const GenerateNumber = () => {
       <h1 className="text-center">Generate Number</h1>
       <div className="numbers">
         <ul>
-          <GenerateNum />
+          <GenerateNum first={0} end={50} />
         </ul>
       </div>
     </div>
