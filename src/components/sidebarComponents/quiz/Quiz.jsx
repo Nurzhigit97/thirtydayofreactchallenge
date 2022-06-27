@@ -59,8 +59,8 @@ function Quiz() {
           <div className="question-section">
             <div className="box">
               <form className="form">
-                <div class="field">
-                  <div class="control">
+                <div className="field">
+                  <div className="control">
                     <div>{<NameFirstIndexUpper />}</div>
                     <input
                       type="text"

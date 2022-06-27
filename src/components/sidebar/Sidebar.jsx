@@ -32,7 +32,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/frontendTehnologies" activeClassName="active">
+            <Link to="/eventHandle" activeClassName="active">
               Event Handle(Change position on Mouse)
             </Link>
           </li>

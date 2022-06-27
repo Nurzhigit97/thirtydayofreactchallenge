@@ -13,14 +13,14 @@ const DummyData = () => {
       </p>
 
       <div className="datashow">
-        <div class="inputData m-2">
+        <div className="inputData m-2">
           <div>
             <input
               type="text"
               name="amount"
               id="amount"
               placeholder="Enter a number"
-              class=""
+              className=""
               value=""
             />
           </div>
@@ -88,7 +88,7 @@ const DummyData = () => {
         <div className="dataShowInfo">
           <textarea name="" id="" value={names}></textarea>
           <div className="clipboard">
-            <i class="fa-solid fa-paste col"></i>
+            <i className="fa-solid fa-paste col"></i>
           </div>
         </div>
       </div>

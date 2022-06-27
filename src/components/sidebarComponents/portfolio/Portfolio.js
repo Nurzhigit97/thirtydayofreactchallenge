@@ -29,7 +29,6 @@ const buttonStyles = {
   color: "white",
 };
 
-// class based component
 class Header extends Component {
   // constructor(props) {
   //   super(props);

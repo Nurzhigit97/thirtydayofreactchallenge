@@ -72,7 +72,7 @@ const CountriesApi = () => {
                     {population
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                    <i class="fa-solid fa-users"></i>
+                    <i className="fa-solid fa-users"></i>
                   </p>
                   <p>Currency:{} </p>
                 </div>
