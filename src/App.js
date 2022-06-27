@@ -15,6 +15,7 @@ import Population from "./components/sidebarComponents/population/Population";
 import Quiz from "./components/sidebarComponents/quiz/Quiz";
 import CountriesApi from "./components/sidebarComponents/countriesApi/CountriesApi.jsx";
 import Portfolio from "./components/sidebarComponents/portfolio/Portfolio";
+import EventHandles from "./components/sidebarComponents/eventHandles/EventHandles";
 
 function scrollTop() {
   // if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -52,6 +53,7 @@ function App() {
           <Route path="quiz" element={<Quiz />} />
           <Route path="countriesApi" element={<CountriesApi />} />
           <Route path="portfolio" element={<Portfolio />} />
+          <Route path="eventHandle" element={<EventHandles />} />
         </Routes>
       </article>
       {/* footer */}
