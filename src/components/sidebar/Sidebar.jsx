@@ -37,7 +37,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/frontendTehnologies" activeClassName="active">
+            <Link to="/generateHexDecimalColor" activeClassName="active">
               Generate Hexdecimal color
             </Link>
           </li>
