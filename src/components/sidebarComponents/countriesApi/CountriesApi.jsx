@@ -15,12 +15,11 @@ const CountriesApi = () => {
 
   const worldCountries = async () => {
     try {
-      const data = await axios
-        .get(`https://restcountries.com/v3.1/all`)
-        .then((res) => {
-          console.log(res);
-          setCountries(res.data);
-        });
+      // let data=
+      await axios.get(`https://restcountries.com/v3.1/all`).then((res) => {
+        console.log(res);
+        setCountries(res.data);
+      });
       setLoading(true);
     } catch (err) {
       console.log(err);
