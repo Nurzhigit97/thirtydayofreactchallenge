@@ -42,13 +42,13 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/frontendTehnologies" activeClassName="active">
-              Twitter clone(Fucn,Hooks,Redux)
+            <Link to="/form" activeClassName="active">
+              Login with db(Fucn,Hooks,Redux)
             </Link>
           </li>
           <li>
             <Link to="/frontendTehnologies" activeClassName="active">
-              Login with db(Fucn,Hooks,Redux)
+              Twitter clone(Fucn,Hooks,Redux)
             </Link>
           </li>
         </ul>
