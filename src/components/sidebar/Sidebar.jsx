@@ -42,7 +42,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/form" activeClassName="active">
+            <Link to="/customForm" activeClassName="active">
               Login with db(Fucn,Hooks,Redux)
             </Link>
           </li>
