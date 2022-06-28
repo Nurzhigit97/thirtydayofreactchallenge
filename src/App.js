@@ -16,7 +16,7 @@ import CountriesApi from "./components/sidebarComponents/countriesApi/CountriesA
 import Portfolio from "./components/sidebarComponents/portfolio/Portfolio";
 import EventHandles from "./components/sidebarComponents/eventHandles/EventHandles";
 import GenerateHexDecimalColor from "./components/sidebarComponents/generateHexDecimalColor/GenerateHexDecimalColor";
-import Form from "./components/sidebarComponents/form/Form";
+import CustomForm from "./components/sidebarComponents/customForm/CustomForm";
 
 function scrollTop() {
   // if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -58,7 +58,7 @@ function App() {
             path="generateHexDecimalColor"
             element={<GenerateHexDecimalColor />}
           />
-          <Route path="form" element={<Form />} />
+          <Route path="customForm" element={<CustomForm />} />
         </Routes>
       </article>
       {/* footer */}
