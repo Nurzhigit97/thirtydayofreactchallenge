@@ -74,6 +74,7 @@ const CustomForm = () => {
           <option value="UAH">UAH</option>
           <option value="RUB">RUB</option>
         </Field>
+
         <ErrorMessage className="error" name="currency" component="div" />
         <label htmlFor="text">Ваше сообщение</label>
         <Field id="text" name="text" as="textarea" />
@@ -81,7 +82,7 @@ const CustomForm = () => {
         <MyCheckBox name="terms">
           Соглашаетесь с политикой конфиденциальности?
         </MyCheckBox>
-        <button type="submit">Отправить</button>
+        <button className="customFormBtn" type="submit">Отправить</button>
       </Form>
     </Formik>
   );
