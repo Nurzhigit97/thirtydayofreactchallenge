@@ -57,7 +57,7 @@ const CustomForm = () => {
       })}
       onSubmit={(values) => console.log(JSON.stringify(values, null, 2))}
     >
-      <Form className="form">
+      <Form className="customForm">
         <h2>Отправить пожертвование</h2>
         <MyTextInput label="Ваше имя" id="name" name="name" type="text" />
         <MyTextInput label="Ваша почта" id="email" name="email" type="email" />
