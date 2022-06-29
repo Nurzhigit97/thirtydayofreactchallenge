@@ -17,6 +17,7 @@ import Portfolio from "./components/sidebarComponents/portfolio/Portfolio";
 import EventHandles from "./components/sidebarComponents/eventHandles/EventHandles";
 import GenerateHexDecimalColor from "./components/sidebarComponents/generateHexDecimalColor/GenerateHexDecimalColor";
 import CustomForm from "./components/sidebarComponents/customForm/CustomForm";
+import TwitterClone from "./components/sidebarComponents/twitterClone/TwitterClone";
 
 function scrollTop() {
   // if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -59,6 +60,7 @@ function App() {
             element={<GenerateHexDecimalColor />}
           />
           <Route path="customForm" element={<CustomForm />} />
+          <Route path="twitterClone" element={<TwitterClone />} />
         </Routes>
       </article>
       {/* footer */}
