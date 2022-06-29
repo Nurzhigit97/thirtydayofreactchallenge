@@ -47,7 +47,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/frontendTehnologies" activeClassName="active">
+            <Link to="/twitterClone" activeClassName="active">
               Twitter clone(Fucn,Hooks,Redux)
             </Link>
           </li>
