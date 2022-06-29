@@ -57,32 +57,41 @@ const CustomForm = () => {
       })}
       onSubmit={(values) => console.log(JSON.stringify(values, null, 2))}
     >
-      <Form className="customForm">
-        <h2>Отправить пожертвование</h2>
-        <MyTextInput label="Ваше имя" id="name" name="name" type="text" />
-        <MyTextInput label="Ваша почта" id="email" name="email" type="email" />
-        <MyTextInput
-          label="Количество"
-          id="amount"
-          name="amount"
-          type="number"
-        />
-        <label htmlFor="currency">Валюта</label>
-        <Field id="currency" name="currency" as="select">
-          <option value="">Выберите валюту</option>
-          <option value="USD">USD</option>
-          <option value="UAH">UAH</option>
-          <option value="RUB">RUB</option>
-        </Field>
+      <Form className="formikForm">
+        <div className="formBlock">
+          <h2>Отправить пожертвование</h2>
+          <MyTextInput label="Ваше имя" id="name" name="name" type="text" />
+          <MyTextInput
+            label="Ваша почта"
+            id="email"
+            name="email"
+            type="email"
+          />
+          <MyTextInput
+            label="Количество"
+            id="amount"
+            name="amount"
+            type="number"
+          />
+          <label htmlFor="currency">Валюта</label>
+          <Field id="currency" name="currency" as="select">
+            <option value="">Выберите валюту</option>
+            <option value="USD">USD</option>
+            <option value="UAH">UAH</option>
+            <option value="RUB">RUB</option>
+          </Field>
 
-        <ErrorMessage className="error" name="currency" component="div" />
-        <label htmlFor="text">Ваше сообщение</label>
-        <Field id="text" name="text" as="textarea" />
-        <ErrorMessage className="error" name="text" component="div" />
-        <MyCheckBox name="terms">
-          Соглашаетесь с политикой конфиденциальности?
-        </MyCheckBox>
-        <button className="customFormBtn" type="submit">Отправить</button>
+          <ErrorMessage className="error" name="currency" component="div" />
+          <label htmlFor="text">Ваше сообщение</label>
+          <Field id="text" name="text" as="textarea" />
+          <ErrorMessage className="error" name="text" component="div" />
+          <MyCheckBox name="terms">
+            Соглашаетесь с политикой конфиденциальности?
+          </MyCheckBox>
+          <button className="sendBtn" type="submit">
+            Отправить
+          </button>
+        </div>
       </Form>
     </Formik>
   );
