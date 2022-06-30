@@ -50,7 +50,7 @@ const ShowMgs = (msg) => {
     <div>
       {showMsg ? <SliceMsg msg={msg} /> : msg}
       <button onClick={handleClick} className="btn btn-success">
-        {!showMsg ? "Hide Msg" : "Show Msg"}
+        {!showMsg ? "Hide Msg" : "Show full Msg"}
       </button>
     </div>
   );
@@ -115,15 +115,7 @@ const TwitterClone = () => {
             <p>@shaidievN</p>
           </div>
           <div className="msgUsersMain">
-            <p className="mainMsg p-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              quis quibusdam culpa, quae ut quasi et est perspiciatis in
-              expedita optio esse officia porro soluta! Consectetur quis
-              adipisci quasi quas?Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Recusandae voluptatem incidunt doloremque.
-              Consectetur, numquam modi vitae nulla rem beatae ullam qui nostrum
-              quo? Odio dolore autem minus dolorem porro sit!
-            </p>
+            <p className="mainMsg p-3">{ShowMgs(lorem)}</p>
           </div>
           <div className="msgUsersFooter">
             <div className="left">
@@ -148,15 +140,7 @@ const TwitterClone = () => {
             <p>@shaidievN</p>
           </div>
           <div className="msgUsersMain">
-            <p className="mainMsg p-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              quis quibusdam culpa, quae ut quasi et est perspiciatis in
-              expedita optio esse officia porro soluta! Consectetur quis
-              adipisci quasi quas?Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Recusandae voluptatem incidunt doloremque.
-              Consectetur, numquam modi vitae nulla rem beatae ullam qui nostrum
-              quo? Odio dolore autem minus dolorem porro sit!
-            </p>
+            <p className="mainMsg p-3">{ShowMgs(lorem)}</p>
           </div>
           <div className="msgUsersFooter">
             <div className="left">
