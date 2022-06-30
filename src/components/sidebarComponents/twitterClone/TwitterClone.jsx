@@ -100,7 +100,7 @@ const TwitterClone = () => {
             <div className="center">
               <i className="fa-solid fa-comment"></i>
               <i className="fa-solid fa-heart"></i>
-              <i className="fa-solid fa-arrows-retweet"></i>
+              <i className="fa-solid fa-arrows-rotate"></i>
             </div>
             <div className="right">
               <p className="text-dark">{getDateUser()}</p>
@@ -125,7 +125,7 @@ const TwitterClone = () => {
             <div className="center">
               <i className="fa-solid fa-comment"></i>
               <i className="fa-solid fa-heart"></i>
-              <i className="fa-solid fa-arrows-retweet"></i>
+              <i className="fa-solid fa-arrows-rotate"></i>
             </div>
             <div className="right">
               <p className="text-dark">{getDateUser()}</p>
@@ -150,7 +150,7 @@ const TwitterClone = () => {
             <div className="center">
               <i className="fa-solid fa-comment"></i>
               <i className="fa-solid fa-heart"></i>
-              <i className="fa-solid fa-arrows-retweet"></i>
+              <i className="fa-solid fa-arrows-rotate"></i>
             </div>
             <div className="right">
               <p className="text-dark">{getDateUser()}</p>
