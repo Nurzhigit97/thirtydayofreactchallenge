@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
-import Menu from "./components/menu/Menu";
+import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import About from "./layouts/about/About";
@@ -18,6 +18,8 @@ import EventHandles from "./components/sidebarComponents/eventHandles/EventHandl
 import GenerateHexDecimalColor from "./components/sidebarComponents/generateHexDecimalColor/GenerateHexDecimalColor";
 import CustomForm from "./components/sidebarComponents/customForm/CustomForm";
 import TwitterClone from "./components/sidebarComponents/twitterClone/TwitterClone";
+import Signup from "./layouts/login/Signup";
+import Login from "./layouts/login/Login";
 
 function scrollTop() {
   // if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -45,9 +47,11 @@ function App() {
       <article>
         <Routes>
           {/* nav links */}
-          <Route path="/" element={<Menu />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/dummy" element={<DummyData />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
           {/* sidebar links */}
           <Route path="frontendTehnologies" element={<FrontEndTehnologies />} />
           <Route path="generateNumber" element={<GenerateNumber />} />
