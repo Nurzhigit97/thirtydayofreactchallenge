@@ -111,7 +111,7 @@ const TwitterClone = () => {
               <i className="fa-solid fa-arrows-retweet"></i>
             </div>
             <div className="right">
-              <p>{Date()}</p>
+              <p className="text-dark">{GetDate()}</p>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@ const TwitterClone = () => {
               <i className="fa-solid fa-arrows-retweet"></i>
             </div>
             <div className="right">
-              <p>{Date()}</p>
+              <p className="text-dark">{GetDate()}</p>
             </div>
           </div>
         </div>
