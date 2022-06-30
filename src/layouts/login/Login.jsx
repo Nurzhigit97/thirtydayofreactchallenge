@@ -5,8 +5,8 @@ const Login = () => {
   return (
     <div className="login">
       <div className="signLogin">
-        <Link to="/signup" className="signLoginLink">
-          Sign Up
+        <Link to="/signin" className="signLoginLink">
+          Sign In
         </Link>
         <Link to="/login" className="signLoginLink">
           Login
