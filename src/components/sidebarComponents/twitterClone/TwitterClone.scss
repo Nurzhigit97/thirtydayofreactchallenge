@@ -1,13 +1,17 @@
 .twitterClone {
-  & hr {
-    border: 1px solid green;
-  }
   display: flex;
   background-color: #ffffff;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 20px;
+
+  & .twiiterClonePadding {
+    padding: 0 200px;
+  }
+
+  & hr {
+    border: 1px solid green;
+  }
   & .twitterCloneBlock {
     position: relative;
     padding-top: 50px;
@@ -18,6 +22,7 @@
     width: 100%;
     padding: 15px;
     background-color: #fcf8f3;
+    color: #697a89;
     resize: none;
     border: none;
     outline: none;
@@ -29,9 +34,7 @@
   & .text::placeholder {
     font: 23px sans-serif;
   }
-  & .writePost {
-    position: relative;
-  }
+
   & .sizePost {
     position: absolute;
     color: #44a2f2;
@@ -53,15 +56,57 @@
 
 .msgUsers {
   color: black;
+  //Header
   & .msgUsersHeader {
     display: flex;
     justify-content: space-evenly;
-    & i {
-      font-size: 30px;
+    & img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    & .userName {
+      font-family: "Roboto Slab";
+    }
+    & p {
+      color: #697a89;
     }
   }
+  & .mainMsg {
+    font-size: 1.25rem;
+    letter-spacing: 1.25px;
+    font-family: "Poppins", serif;
+  }
+  //center
+  & .center i {
+    margin: 0 5px 0 5px;
+    color: #44a2f2;
+    cursor: pointer;
+  }
+  & .center i:hover {
+    color: #1be725;
+  }
+  & .center i:nth-child(2):hover {
+    color: #e71b25;
+  }
+  //footer
   & .msgUsersFooter {
     display: flex;
     justify-content: space-around;
+    font-size: 20px;
+    & .left i {
+      margin: 0 5px 0 5px;
+      color: #44a2f2;
+      cursor: pointer;
+    }
+    & .left i:hover {
+      color: #e7441b;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .twiiterClonePadding {
+    padding: 0 !important;
   }
 }
