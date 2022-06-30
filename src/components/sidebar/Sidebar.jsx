@@ -7,47 +7,47 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/frontendTehnologies" activeClassName="active">
+            <Link to="/frontendTehnologies">
               Front-end Tehnologies
             </Link>
           </li>
           <li>
-            <Link to="/GenerateNumber" activeClassName="active">
+            <Link to="/GenerateNumber">
               Generate Number
             </Link>
           </li>
           <li>
-            <Link to="/portfolio" activeClassName="active">
+            <Link to="/portfolio">
               Portfolio(Class)
             </Link>
           </li>
           <li>
-            <Link to="/countriesApi" activeClassName="active">
+            <Link to="/countriesApi">
               Countries Api
             </Link>
           </li>
           <li>
-            <Link to="/quiz" activeClassName="active">
+            <Link to="/quiz">
               Test quiz(Class)
             </Link>
           </li>
           <li>
-            <Link to="/eventHandle" activeClassName="active">
+            <Link to="/eventHandle">
               Event Handle(Change position on Mouse)
             </Link>
           </li>
           <li>
-            <Link to="/generateHexDecimalColor" activeClassName="active">
+            <Link to="/generateHexDecimalColor">
               Generate Hexdecimal color
             </Link>
           </li>
           <li>
-            <Link to="/customForm" activeClassName="active">
+            <Link to="/customForm">
               Login with db(Fucn,Hooks,Redux)
             </Link>
           </li>
           <li>
-            <Link to="/twitterClone" activeClassName="active">
+            <Link to="/twitterClone">
               Twitter clone(Fucn,Hooks,Redux)
             </Link>
           </li>
