@@ -18,8 +18,10 @@ import EventHandles from "./components/sidebarComponents/eventHandles/EventHandl
 import GenerateHexDecimalColor from "./components/sidebarComponents/generateHexDecimalColor/GenerateHexDecimalColor";
 import CustomForm from "./components/sidebarComponents/customForm/CustomForm";
 import TwitterClone from "./components/sidebarComponents/twitterClone/TwitterClone";
-import Signup from "./layouts/login/Signup";
+import SignUp from "./layouts/login/SignUp";
 import Login from "./layouts/login/Login";
+import Details from "./layouts/login/Details";
+import Error from "./layouts/login/Error";
 
 function scrollTop() {
   // if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -50,8 +52,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/dummy" element={<DummyData />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/signUp" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/details" element={<Details />} />
+          <Route path="/*" element={<Error />} />
+
           {/* sidebar links */}
           <Route path="frontendTehnologies" element={<FrontEndTehnologies />} />
           <Route path="generateNumber" element={<GenerateNumber />} />
