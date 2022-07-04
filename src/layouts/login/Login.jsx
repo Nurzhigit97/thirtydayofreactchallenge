@@ -79,7 +79,7 @@ const Login = () => {
       <div className="container mt-3">
         <section className="signupSection">
           <div className="left_data mt-3 p-3" style={{ width: "100%" }}>
-            <h3 className="text-center col-lg-6">Sign IN</h3>
+            <h3 className="text-center col-lg-6">Sign In</h3>
             <Form>
               <Form.Group className="mb-3 col-lg-6" controlId="formBasicEmail">
                 <Form.Control
@@ -114,7 +114,7 @@ const Login = () => {
             <p className="mt-3">
               Already Have an Account{" "}
               <span>
-                <Link to="/signUp">Signg In</Link>
+                <Link to="/signUp">Sign In</Link>
               </span>
             </p>
           </div>
