@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
-
+import "../login/login.scss";
 const Login = () => {
   const history = useNavigate();
 
@@ -75,9 +75,9 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div className="signup">
       <div className="container mt-3">
-        <section className="d-flex justify-content-between">
+        <section className="signupSection">
           <div className="left_data mt-3 p-3" style={{ width: "100%" }}>
             <h3 className="text-center col-lg-6">Sign IN</h3>
             <Form>
@@ -122,7 +122,7 @@ const Login = () => {
         </section>
         <ToastContainer />
       </div>
-    </>
+    </div>
   );
 };
 
