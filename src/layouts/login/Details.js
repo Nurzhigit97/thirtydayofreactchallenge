@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import imgUserSigned from "../../assets/icons8-user-100.png";
 
 const Details = () => {
   const [loginData, setloginData] = useState([]);
@@ -49,8 +50,9 @@ const Details = () => {
       ) : (
         <>
           <h1>Details user</h1>
-          <h1>{loginData[0].name}</h1>
-          <h1>{loginData[0].date}</h1>
+          <img src={imgUserSigned} title="imgUserSigned"></img>
+          <h1>Name:{loginData[0].name}</h1>
+          <h1>Date Birth:{loginData[0].date}</h1>
 
           <Button onClick={userLogOut}>Log out</Button>
 
