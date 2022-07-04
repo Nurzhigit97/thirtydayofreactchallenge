@@ -1,79 +1,119 @@
+import "../login/login.scss";
+import { Form, Button } from "react-bootstrap";
+import Sign_img from "./Sign_img";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./login.scss";
-
+import { useNavigate } from "react-router-dom"; // Для автоматического перехода через history на ссылку
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const SignUp = () => {
+  const [inputVal, setinputVal] = useState({
+    name: "",
+    email: "",
+    password: "",
+    file: "",
+    date: "",
+  });
+  const history = useNavigate();
+
+  let [data, setData] = useState([]);
+
+  const getData = (e) => {
+    const { value, name } = e.target;
+    console.log(inputVal);
+    setinputVal(() => {
+      return {
+        ...inputVal,
+        [name]: value,
+      };
+    });
+  };
+
+  const addData = (e) => {
+    e.preventDefault();
+    const { name, email, password, file, date } = inputVal;
+    if (name == "") {
+      alert("name failed is required");
+    } else if (email == "") {
+      alert("email failed is required");
+    } else if (!email.includes("@")) {
+      alert("email failed isn't have @ required");
+    } else if (password == "") {
+      alert("password failed is required");
+    } else if (password.length < 5) {
+      alert("password length greater five");
+    } else {
+      toast.success("data added successfully", {
+        position: "top-center",
+      });
+    }
+    console.log(inputVal);
+    localStorage.setItem("form", JSON.stringify([...data, inputVal]));
+  };
   return (
     <div className="signup">
-      <div className="signUpLogin">
-        <Link to="/signUp" className="signLoginLink">
-          Sign Up
-        </Link>
-        <Link to="/login" className="signUpLoginLink">
-          Login
-        </Link>
+      <div className="container mt-3">
+        <section className="signupSection">
+          <div className="left_data mt-3" style={{ width: "100%" }}>
+            <h3 className="text-center col-lg-6">Sign Up</h3>
+            <Form>
+              <Form.Group className="mb-3 col-lg-6" controlId="formBasicName">
+                <Form.Control
+                  onChange={getData}
+                  type="text"
+                  name="name"
+                  placeholder="Enter name"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-3 col-lg-6" controlId="formBasicEmail">
+                <Form.Control
+                  onChange={getData}
+                  type="email"
+                  name="email"
+                  placeholder="Enter email"
+                />
+              </Form.Group>
+              <Form.Group
+                className="mb-3 col-lg-6"
+                controlId="formBasicPassword"
+              >
+                <Form.Control
+                  onChange={getData}
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-3 col-lg-6" controlId="formBasicFile">
+                <Form.Control name="file" onChange={getData} type="file" />
+              </Form.Group>
+
+              <Form.Group className="mb-3 col-lg-6" controlId="formBasicDate">
+                <Form.Control name="date" onChange={getData} type="date" />
+              </Form.Group>
+
+              <Button
+                onClick={addData}
+                className="col-lg-6 bg-success"
+                variant="primary"
+                type="submit"
+              >
+                Submit
+              </Button>
+            </Form>
+            <p className="mt-3">
+              Already Have an Accaunt{" "}
+              <span>
+                <Link to="/login">Signg In</Link>
+              </span>
+            </p>
+          </div>
+          <Sign_img />
+        </section>
       </div>
-      <form className="auth">
-        <div className="form-group row">
-          <div className="col">
-            <label htmlFor="exampleInputFirstName1">First name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="First name"
-            />
-          </div>
-          <div className="col">
-            <label htmlFor="exampleInputLastName1">Last name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Last name"
-            />
-          </div>
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
-          <input
-            type="email"
-            className="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Enter email"
-          />
-          <small id="emailHelp" className="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword1"
-            placeholder="Password"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleInputPassword2">Confirm password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="exampleInputPassword2"
-            placeholder="Confirm password"
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="exampleFormControlFile1">Example file input</label>
-          <input
-            type="file"
-            className="form-control-file"
-            id="exampleFormControlFile1"
-          />
-        </div>
-        <button type="submit" className="text-center btnSignUp">
-          Submit
-        </button>
-      </form>
+      <ToastContainer />
     </div>
   );
 };
