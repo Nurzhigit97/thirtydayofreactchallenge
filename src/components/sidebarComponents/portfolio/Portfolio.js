@@ -1,5 +1,6 @@
 import NurImage from "../../../assets/frontendTehnologies/react_logo.a6cd748e.png";
 import { Component } from "react";
+import Clock from "./Clock";
 // Fuction to show month date year
 
 // User Card Component
@@ -38,8 +39,6 @@ class Header extends Component {
     console.log(this.props.data);
     const {
       welcome,
-      title,
-      subtitle,
       author: { firstName, lastName },
       date,
     } = this.props.data;
@@ -47,12 +46,10 @@ class Header extends Component {
     return (
       <div className="header-wrapper bg-white text-black">
         <h1>{welcome}</h1>
-        <h2>{title}</h2>
-        <h3>{subtitle}</h3>
-        <p>
+        <h2>
           {firstName} {lastName}
-        </p>
-        <small>{date}</small>
+        </h2>
+        <h5>{date}</h5>
       </div>
     );
   }
@@ -81,7 +78,7 @@ class Main extends Component {
     return (
       <main>
         <div className="main-wrapper">
-          <p>Prerequisite to get started react.js:</p>
+          <h3>Skills:</h3>
           <ul>
             <TechList techs={this.props.techs} />
           </ul>
@@ -132,16 +129,25 @@ class Portfolio extends Component {
   };
   render() {
     const data = {
-      welcome: "Welcome to 30 Days Of React",
-      title: "Getting Started React",
-      subtitle: "JavaScript Library",
+      welcome: "Welcome to Nurzhigit Portfolio",
       author: {
         firstName: "Nurzhigit",
         lastName: "Shaidiev",
       },
-      date: "June 25, 2022",
+      date: <Clock />,
     };
-    const techs = ["HTML", "CSS", "JavaScript"];
+    const techs = [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "React-toastify: for show notifications with styles",
+      "Formik:Formik is a small library that helps you with the 3 most annoying parts: Getting values in and out of form state. Validation and error messages. Handling form submission.",
+      "Yup: for validation inputs",
+      "scss",
+      "bootstrap, react-bootstrap",
+
+    ];
 
     // copying the author from data object to user variable using spread operator
     const user = { ...data.author, image: NurImage };
