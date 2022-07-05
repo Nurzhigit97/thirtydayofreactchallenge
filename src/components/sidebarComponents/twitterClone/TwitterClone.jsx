@@ -21,7 +21,7 @@ const getDateUser = () => {
   ];
 
   let monthStr = month[date.getMonth()];
-  let day = date.getDay();
+  let day = date.getDate();
   let fullYear = date.getFullYear();
   let hour = date.getHours();
   let minutes = date.getMinutes();
@@ -32,6 +32,7 @@ const getDateUser = () => {
     hour > 6 && hour < 18 ? "pm" : "am"
   }`;
 };
+
 //For Post Msg
 const SliceMsg = ({ msg }) => {
   return msg.replace(/\s/g, "").length > 250
