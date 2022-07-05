@@ -89,7 +89,7 @@ class Main extends Component {
             style={buttonStyles}
           />
           <Button
-            text="Show Time"
+            text="Show Date"
             onClick={this.props.handleTime}
             style={buttonStyles}
           />
@@ -146,7 +146,6 @@ class Portfolio extends Component {
       "Yup: for validation inputs",
       "scss",
       "bootstrap, react-bootstrap",
-
     ];
 
     // copying the author from data object to user variable using spread operator
