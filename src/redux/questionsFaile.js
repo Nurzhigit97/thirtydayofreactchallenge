@@ -1,5 +1,14 @@
 export const questions = [
   {
+    questionText: "what do you like Edelweiss?",
+    answerOptions: [
+      { answerText: "Talking", isCorrect: false },
+      { answerText: "Watch Movies", isCorrect: false },
+      { answerText: "Politics", isCorrect: true },
+      { answerText: "About anything", isCorrect: false },
+    ],
+  },
+  {
     questionText: "What is the capital of France?",
     answerOptions: [
       { answerText: "New York", isCorrect: false },
